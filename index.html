@@ -3,94 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-image: url(img/background3.jpg);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        header {
-            margin-top: 5%;
-        }
-        h1 {
-            color: rgb(48, 46, 46);
-            text-align: center;
-            margin-left: 44px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 30px;
-            gap: 70px;
-            margin-top: 2%;
-        }
-        .card p a {
-            text-decoration: none;
-            color: rgb(48, 46, 46);
-            background-color: white;
-            padding: 10px;
-            margin-top: 30px;
-            border: 1px solid rgb(48, 46, 46);
-            border-radius: 20px;
-        }
-        .card p a:hover {
-            color: rgb(85, 85, 224);
-            border: 1px solid rgb(85, 85, 224);
-        }
-        .card p {
-            text-align: center;
-        }
-        .card img {
-            border-radius: 20px;
-        }
-        .card {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-        }
-        .card:hover {
-            -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-        }
-        @media screen and (max-width: 907px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 0.9em;
-            }
-            .card a {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/index-style.css">
     <title>Lagu Saya</title>
 </head>
 <body>
     <header>
         <h1>Top 3 Lagu Terbaik versi Saya</h1>
-        <hr width="700">
+        <hr width="500">
     </header>
     <section class="gallery">
-        <div class="card" >
-            <a href="lagu1.html"><img src="img/budi-doremi.jpg" width="380" height="280" alt="budi"></a>
+        <div class="card">
+            <a href="lagu1.html"><img src="img/budi-doremi.jpg" alt="budi"></a>
             <p><a href="lagu1.html">Budi Doremi - Tak Kan Hilang</a></p>
         </div>
 
         <div class="card">
-            <a href="lagu2.html"><img src="img/arvian-dwi.jpg" width="380" height="280" alt="arvian"></a>
+            <a href="lagu2.html"><img id="img-bottom" src="img/arvian-dwi.jpg" alt="arvian"></a>
             <p><a href="lagu2.html">Arvian Dwi - Ajarkan Aku</a></p>
         </div>
         
         <div class="card">
-            <a href="lagu3.html"><img src="img/rizky-febian.jpg" width="380" height="280" alt="fabio"></a>
+            <a href="lagu3.html"><img src="img/rizky-febian.jpg" alt="fabio"></a>
             <p><a href="lagu3.html">Rizky Febian - Hingga Tua Bersama</a></p>
-        </div>          
+        </div>
     </section>
 </body>
 </html>
