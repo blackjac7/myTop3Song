@@ -60,3 +60,11 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 0.8em;
+    }
+    .card iframe{
+        width: 100%;
+    }
+}

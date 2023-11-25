@@ -102,3 +102,36 @@ p {
         height: 225px;
     }
 }
+
+@media screen and (max-width: 935px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    hr {
+        width: 350px;
+        border: 0.8px solid rgb(48, 46, 46);
+    }
+    .card img {
+        width: 300px;
+        height: 225px;
+    }
+}
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    hr {
+        width: 250px;
+        border: 0.8px solid rgb(48, 46, 46);
+    }
+    .card img {
+        width: 240px;
+        height: 175px;
+    }
+}
