@@ -1,5 +1,6 @@
 /* Body Background */
 body {
+    margin: 0 auto;
     background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,18 +10,21 @@ body {
 
 /* Header Style and Font */
 header {
-    /* margin-top: 5%; */
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 h1 {
+    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: rgb(48, 46, 46);
+    font-size: 1.7em;
 }
 hr {
+    width: 400px;
     border: 1px solid rgb(48, 46, 46);
 }
 p {
@@ -35,6 +39,7 @@ p {
     padding: 30px 25px;
     gap: 50px;
     margin-top: 2%;
+    margin-bottom: 10%;
 }
 /* Card  (gallery:child) */
 .card {
@@ -85,16 +90,26 @@ p {
     object-position: bottom;
 }
 
+/* Footer */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsive Screen */
 @media screen and (max-width: 935px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     p {
         font-size: 0.9em;
     }
     hr {
-        width: 350px;
+        width: 300px;
         border: 0.8px solid rgb(48, 46, 46);
     }
     .card img {
@@ -102,26 +117,9 @@ p {
         height: 225px;
     }
 }
-
-@media screen and (max-width: 935px) {
+@media screen and (max-width: 460px) {
     h1 {
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 0.9em;
-    }
-    hr {
-        width: 350px;
-        border: 0.8px solid rgb(48, 46, 46);
-    }
-    .card img {
-        width: 300px;
-        height: 225px;
-    }
-}
-@media screen and (max-width: 360px) {
-    h1 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     p {
         font-size: 0.8em;
@@ -133,5 +131,21 @@ p {
     .card img {
         width: 240px;
         height: 175px;
+    }
+}
+@media screen and (max-width: 330px) {
+    h1 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.6em;
+    }
+    hr {
+        width: 200px;
+        border: 0.8px solid rgb(48, 46, 46);
+    }
+    .card img {
+        width: 200px;
+        height: 135px;
     }
 }
